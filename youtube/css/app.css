@@ -1,0 +1,15 @@
+body {
+    background: #edeeee;
+    margin: 0;
+}
+.nav-bar {
+    border-bottom: 3px solid cadetblue;
+    padding-bottom: 5px;
+}
+.logo-academy-tube {
+    width: 50px;
+}
+
+.form--search {
+    display: inline;
+}
