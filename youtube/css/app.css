@@ -2,14 +2,131 @@ body {
     background: #edeeee;
     margin: 0;
 }
-.nav-bar {
-    border-bottom: 3px solid cadetblue;
-    padding-bottom: 5px;
+.header {
+    display: flex;
+    height: 60px;
+    padding: 0 16px;
+    background: white;
 }
-.logo-academy-tube {
-    width: 50px;
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.icono-menu {
+    width: 26px;
+    height: 26px;
+
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+.logo img {
+    width: 33px;
+    height: 28px;
+}
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    margin: -8px;
+}   
+
+.form-buscar {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-buscar {    
+    border: solid 1px #ccc;
+    width: 562px;
+}
+
+/* .form-buscar button {
+    height: 29px;
+} */
+
+.icono {
+    width: 26px;
+    height: 26px;
+    padding: 0 20px;
+}
+.icono-buscar {    
+    width: 65px;
+    height: 28px;
+    border: solid 1px #ccc;
+}
+
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    margin: 0 10px;
+    width: 562px;
+    height: 26px;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header ul{
+    display: flex;
+  }
+  
+.header a {
+display: flex;
+align-items: center;
+height: inherit;
+padding: 0 10px;
+text-decoration: none;
+color: black;
+}
+
+.header a:hover {
+    color: red;
+}
+
+.nav-bar {
+    border-bottom: 3px solid gray;
+    padding-bottom: 5px;
 }
 
 .form--search {
     display: inline;
+}
+
+.main {
+    width: 80%;
+}
+
+.categoria {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.media {
+    background: palegreen;
+    width: 210px;
+    height: 118px;
+}
+
+.media img {
+    width: 100%;    
 }
