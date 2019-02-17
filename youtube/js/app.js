@@ -9,9 +9,9 @@ const videos = {
         },
         {
             id: 8,
-            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-            title: 'Calma Remix',
-            autor: 'Pedro Capo - Farruko',
+            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+            title: 'No money - The aviary',
+            autor: 'Galantis - The aviary',
             views: ' 2K vistas Hace 2 semanas'
         },
         {
@@ -37,9 +37,9 @@ const videos = {
         },
         {
             id: 7,
-            img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Los-Campeones-Del-Pueblo.jpg',
-            title: 'Wisin & Yandel, Romeo Santos - Aullando (Official Video)',
-            autor: 'Karol G, Maluma',
+            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+            title: 'No money - The aviary',
+            autor: 'Galantis ',
             views: ' 72K vistas Hace 2 meses'
         },
         {
