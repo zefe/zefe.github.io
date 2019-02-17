@@ -40,10 +40,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-.input-buscar {    
+/* .input-buscar {    
     border: solid 1px #ccc;
     width: 562px;
-}
+} */
 
 /* .form-buscar button {
     height: 29px;
@@ -68,10 +68,11 @@ form {
 }
 
 input {
-    margin: 0 10px;
     width: 562px;
     height: 26px;
-    border: none;
+    border: none;    
+    border: solid 1px #ccc;
+    padding-left: 5px;
 }
 
 nav{
