@@ -4,40 +4,50 @@ const videos = {
             id: 1,
             img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
             title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
-            autor: 'Anuel AA '
+            autor: 'Anuel AA ',
+            views: ' 72K vistas Hace 2 meses'
         },
         {
             id: 8,
             img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
             title: 'Calma Remix',
-            autor: 'Pedro Capo - Farruko'
+            autor: 'Pedro Capo - Farruko',
+            views: ' 2K vistas Hace 2 semanas'
         },
         {
             id: 3,
             img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Creeme.jpg',
-            title: 'Karol G, Maluma - Créeme'
+            title: 'Karol G, Maluma - Créeme',
+            autor: 'Karol G, Maluma',
+            views: ' 20K vistas Hace 4 dias'
         },        
         {
             id: 5,
             img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
             title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
-            autor: 'Anuel AA '
+            autor: 'Anuel AA ',
+            views: ' 90K vistas Hace 3 meses'
         },
         {
             id: 6,
             img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Creeme.jpg',
-            title: 'Karol G, Maluma - Créeme'
+            title: 'Karol G, Maluma - Créeme',
+            autor: 'Karol G, Maluma',
+            views: ' 1K vistas Hace 3 dias'
         },
         {
             id: 7,
             img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Los-Campeones-Del-Pueblo.jpg',
-            title: 'Wisin & Yandel, Romeo Santos - Aullando (Official Video)'
+            title: 'Wisin & Yandel, Romeo Santos - Aullando (Official Video)',
+            autor: 'Karol G, Maluma',
+            views: ' 72K vistas Hace 2 meses'
         },
         {
             id: 8,
             img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
             title: 'Calma Remix',
-            autor: 'Pedro Capo - Farruko'
+            autor: 'Pedro Capo - Farruko',
+            views: ' 100K vistas Hace 1 mes'
         }
     ],
     principal:[],
@@ -64,18 +74,23 @@ function createArticle(data) {
 
         const recomendados = data.recomendados;
 
-
         console.log(recomendados[i].title)
 
         const item_article = document.createElement('article')
         const item_h4 = document.createElement('h4')    
         const item_img = document.createElement('img')
+        const item_span = document.createElement('span')
+        const item_span_views = document.createElement('span')
+
         item_img.setAttribute('src',recomendados[i].img)
         item_h4.appendChild(document.createTextNode(recomendados[i].title))
-
+        item_span.appendChild(document.createTextNode(recomendados[i].autor))
+        item_span_views.appendChild(document.createTextNode(recomendados[i].views))
     
         item_article.appendChild(item_img)
         item_article.appendChild(item_h4)
+        item_article.appendChild(item_span)
+        item_article.appendChild(item_span_views)
     
         const article = document.getElementById("categoria").appendChild(item_article)
         
