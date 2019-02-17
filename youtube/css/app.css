@@ -1,6 +1,6 @@
 body {
-    background: #edeeee;
     margin: 0;
+    background: #f8f8f8;
 }
 .header {
     display: flex;
@@ -53,6 +53,7 @@ body {
     width: 26px;
     height: 26px;
     padding: 0 20px;
+    
 }
 .icono-buscar {    
     width: 65px;
@@ -129,4 +130,11 @@ color: black;
 
 .media img {
     width: 100%;    
+}
+
+.media span {
+    display: flex;
+    flex-direction: column;
+    color: #909090;
+    font-size: 16px;
 }
