@@ -50,8 +50,103 @@ const videos = {
             views: ' 100K vistas Hace 1 mes'
         }
     ],
-    principal:[],
-    internacional: []
+    principal:[
+        {
+            id: 1,
+            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+            title: 'No money - The aviary 2',
+            autor: 'Galantis ',
+            views: ' 72K vistas Hace 2 meses'
+        },
+        {
+            id: 2,
+            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+            title: 'Calma Remix 2',
+            autor: 'Pedro Capo - Farruko',
+            views: ' 100K vistas Hace 1 mes'
+        }
+    ],
+    internacional: [
+        {
+            id: 1,
+            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+            title: 'No money - The aviary 2',
+            autor: 'Galantis ',
+            views: ' 72K vistas Hace 2 meses'
+        },
+        {
+            id: 2,
+            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+            title: 'Calma Remix 2',
+            autor: 'Pedro Capo - Farruko',
+            views: ' 100K vistas Hace 1 mes'
+        }
+    ]
+};
+
+const videos2 = {
+    "categories": [
+        {
+            id: 1,
+            title: "Lo más recomendado",
+            playlist:[
+                {
+                    id: 1,
+                    img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+                    title: 'No money - The aviary 2',
+                    autor: 'Galantis ',
+                    views: ' 72K vistas Hace 2 meses'
+                },
+                {
+                    id: 2,
+                    img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+                    title: 'Calma Remix 2',
+                    autor: 'Pedro Capo ',
+                    views: ' 100K vistas Hace 1 mes'
+                }
+            ]
+        },        
+        {
+            id: 1,
+            title: "Lo más visto",
+            playlist:[
+                {
+                    id: 1,
+                    img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+                    title: 'No money - The aviary 2',
+                    autor: 'Galantis ',
+                    views: ' 72K vistas Hace 2 meses'
+                },
+                {
+                    id: 2,
+                    img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+                    title: 'Calma Remix 2',
+                    autor: 'Pedro Capo - Farruko',
+                    views: ' 100K vistas Hace 1 mes'
+                }
+            ]
+        },        
+        {
+            id: 1,
+            title: "Tendencias",
+            playlist:[
+                {
+                    id: 1,
+                    img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+                    title: 'No money - The aviary 2',
+                    autor: 'Galantis ',
+                    views: ' 72K vistas Hace 2 meses'
+                },
+                {
+                    id: 2,
+                    img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+                    title: 'Calma Remix 2',
+                    autor: 'Pedro Capo - Farruko',
+                    views: ' 100K vistas Hace 1 mes'
+                }
+            ]
+        }
+    ]
 }
 
 function createHeader() {
@@ -67,14 +162,11 @@ function createHeader() {
 
 
 function createArticle(data) {
-    console.log(data)
     //creamos la descripcion del video
 
     for(let i=0; i < data.recomendados.length; i++){
 
         const recomendados = data.recomendados;
-
-        console.log(recomendados[i].title)
 
         const item_article = document.createElement('article')
         const item_h4 = document.createElement('h4')    
@@ -100,7 +192,16 @@ function createArticle(data) {
 
 }
 //AGREGAAR ELEMENTOS
+function categoriasObj(data) {
+console.log(data)
+    let api = data;
+    console.log(api)
+    console.log(api)
+}
 
 window.addEventListener('load', function() {
     createArticle(videos)
+    
+    categoriasObj(videos)
 })
+
