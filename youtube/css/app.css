@@ -127,7 +127,8 @@ color: black;
 }
 
 .media img {
-    width: 100%;    
+    width: 210px;
+    height: 118px;   
 }
 
 .media span {
@@ -135,4 +136,11 @@ color: black;
     flex-direction: column;
     color: #909090;
     font-size: 16px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }

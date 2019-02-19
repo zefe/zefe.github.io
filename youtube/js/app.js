@@ -44,7 +44,7 @@ const videos = {
         },
         {
             id: 8,
-            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+            img: 'https://i.ytimg.com/vi/oJLhobZ97q8/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAA-Q90jGrx-JXBYdEVVJqDFCNnnw',
             title: 'Calma Remix',
             autor: 'Pedro Capo - Farruko',
             views: ' 100K vistas Hace 1 mes'
@@ -139,7 +139,7 @@ const videos2 = {
                 },
                 {
                     id: 2,
-                    img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
+                    img: 'https://i.ytimg.com/vi/oJLhobZ97q8/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAA-Q90jGrx-JXBYdEVVJqDFCNnnw',
                     title: 'Calma Remix 2',
                     autor: 'Pedro Capo - Farruko',
                     views: ' 100K vistas Hace 1 mes'
