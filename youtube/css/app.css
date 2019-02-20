@@ -144,3 +144,34 @@ color: black;
     align-items: center;
     margin-top: 200px;
 }
+
+/* Lista de reproduccion estatica */
+
+.video-section-carousel {
+    display: flex;
+    overflow: scroll;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.item-media {
+    padding: 0 10px;
+}
+
+.item-media a {
+    color: black;
+    text-decoration: none;
+}
+.item-media a:hover {
+    color: crimson;
+}
+
+.item-media h4{
+    margin: 0;
+    padding: 0;
+}
+
+.video-section-carousel span {
+    display: flex;
+    flex-direction: column;
+}

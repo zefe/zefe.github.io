@@ -164,7 +164,7 @@ function createHeader() {
 function createArticle(data) {
     //creamos la descripcion del video
 
-    for(let i=0; i < data.recomendados.length; i++){
+    for(let i=0; i < data.recomendados.length; i++) {
 
         const recomendados = data.recomendados;
 
