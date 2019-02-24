@@ -1,94 +1,10 @@
-const videos = {
-    recomendados: [
-        {
-            id: 1,
-            img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
-            title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
-            autor: 'Anuel AA ',
-            views: ' 72K vistas Hace 2 meses'
-        },
-        {
-            id: 8,
-            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-            title: 'No money - The aviary',
-            autor: 'Galantis - The aviary',
-            views: ' 2K vistas Hace 2 semanas'
-        },
-        {
-            id: 3,
-            img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Creeme.jpg',
-            title: 'Karol G, Maluma - Créeme',
-            autor: 'Karol G, Maluma',
-            views: ' 20K vistas Hace 4 dias'
-        },        
-        {
-            id: 5,
-            img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
-            title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
-            autor: 'Anuel AA ',
-            views: ' 90K vistas Hace 3 meses'
-        },
-        {
-            id: 6,
-            img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Creeme.jpg',
-            title: 'Karol G, Maluma - Créeme',
-            autor: 'Karol G, Maluma',
-            views: ' 1K vistas Hace 3 dias'
-        },
-        {
-            id: 7,
-            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-            title: 'No money - The aviary',
-            autor: 'Galantis ',
-            views: ' 72K vistas Hace 2 meses'
-        },
-        {
-            id: 8,
-            img: 'https://i.ytimg.com/vi/oJLhobZ97q8/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAA-Q90jGrx-JXBYdEVVJqDFCNnnw',
-            title: 'Calma Remix',
-            autor: 'Pedro Capo - Farruko',
-            views: ' 100K vistas Hace 1 mes'
-        }
-    ],
-    principal:[
-        {
-            id: 1,
-            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-            title: 'No money - The aviary 2',
-            autor: 'Galantis ',
-            views: ' 72K vistas Hace 2 meses'
-        },
-        {
-            id: 2,
-            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-            title: 'Calma Remix 2',
-            autor: 'Pedro Capo - Farruko',
-            views: ' 100K vistas Hace 1 mes'
-        }
-    ],
-    internacional: [
-        {
-            id: 1,
-            img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-            title: 'No money - The aviary 2',
-            autor: 'Galantis ',
-            views: ' 72K vistas Hace 2 meses'
-        },
-        {
-            id: 2,
-            img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-            title: 'Calma Remix 2',
-            autor: 'Pedro Capo - Farruko',
-            views: ' 100K vistas Hace 1 mes'
-        }
-    ]
-};
 
-const videos2 = {
+
+const videos = {
     "categories": [
         {
             id: 1,
-            title: "Lo más recomendado",
+            title: "RECOMENDADOS",
             playlist:[
                 {
                     id: 1,
@@ -107,8 +23,8 @@ const videos2 = {
             ]
         },        
         {
-            id: 1,
-            title: "Lo más visto",
+            id: 2,
+            title: "PRINCIPAL",
             playlist:[
                 {
                     id: 1,
@@ -127,8 +43,8 @@ const videos2 = {
             ]
         },        
         {
-            id: 1,
-            title: "Tendencias",
+            id: 3,
+            title: "INTERNACIONAL",
             playlist:[
                 {
                     id: 1,
@@ -164,6 +80,7 @@ function createHeader() {
 function createArticle(data) {
     //creamos la descripcion del video
 
+
     for(let i=0; i < data.recomendados.length; i++) {
 
         const recomendados = data.recomendados;
@@ -193,10 +110,9 @@ function createArticle(data) {
 }
 //AGREGAAR ELEMENTOS
 function categoriasObj(data) {
-console.log(data)
-    let api = data;
-    console.log(api)
-    console.log(api)
+let api = data.recomendados;
+let prop = [...api]
+console.log(prop)
 }
 
 window.addEventListener('load', function() {
