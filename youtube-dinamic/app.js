@@ -1,53 +1,3 @@
-// const videos = {
-//         principal: [
-//         {
-//             id: 1,
-//             img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-//             title: 'No money - The aviary 2',
-//             autor: 'Galantis ',
-//             views: ' 72K vistas Hace 2 meses'
-//         },
-//         {
-//             id: 2,
-//             img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-//             title: 'Calma Remix 2',
-//             autor: 'Pedro Capo ',
-//             views: ' 100K vistas Hace 1 mes'
-//         },
-//         {
-//             id: 3,
-//             img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-//             title: 'No money - The aviary 2',
-//             autor: 'Galantis ',
-//             views: ' 72K vistas Hace 2 meses'
-//         },
-//         {
-//             id: 4,
-//             img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-//             title: 'Calma Remix 2',
-//             autor: 'Pedro Capo ',
-//             views: ' 100K vistas Hace 1 mes'
-//         }
-//     ],
-//     recomendados: [
-//         {
-//             id: 1,
-//             img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-//             title: 'No money - The aviary 2 RECOMENDADOS',
-//             autor: 'Galantis ',
-//             views: ' 72K vistas Hace 2 meses'
-//         },
-//         {
-//             id: 2,
-//             img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-//             title: 'Calma Remix 2',
-//             autor: 'Pedro Capo ',
-//             views: ' 100K vistas Hace 1 mes'
-//         }
-//     ],
-//     internacional: []
-//   }
-
 const videos = {
     "categories": [
         {
@@ -56,17 +6,31 @@ const videos = {
             playlist:[
                 {
                     id: 1,
-                    img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
-                    title: 'No money - The aviary 2',
-                    autor: 'Galantis ',
+                    img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
+                    title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
+                    autor: 'Anuel AA ',
                     views: ' 72K vistas Hace 2 meses'
                 },
                 {
                     id: 2,
-                    img: 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png',
-                    title: 'Calma Remix 2',
-                    autor: 'Pedro Capo ',
-                    views: ' 100K vistas Hace 1 mes'
+                    img: 'https://images.shazam.com/coverart/t313510678-b1257259293_s400.jpg',
+                    title: 'No money - The aviary',
+                    autor: 'Galantis - The aviary',
+                    views: ' 2K vistas Hace 2 semanas'
+                },
+                {
+                    id: 3,
+                    img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Creeme.jpg',
+                    title: 'Karol G, Maluma - Créeme',
+                    autor: 'Karol G, Maluma',
+                    views: ' 20K vistas Hace 4 dias'
+                },        
+                {
+                    id: 5,
+                    img: 'https://cdn.reggaetonsinlimite.com/wp-content/uploads/2018/11/Ella-Quiere-Beber-Remix.jpg',
+                    title: 'Anuel AA - Ella Quiere Beber (Remix) ft. Romeo Santos',
+                    autor: 'Anuel AA ',
+                    views: ' 90K vistas Hace 3 meses'
                 }
             ]
         },        
@@ -113,6 +77,21 @@ const videos = {
     ]
 }
 
+function videoSection(index){
+    let principalElement  = document.getElementById('principal')
+
+    
+    
+    
+    const item_div = document.createElement('div')
+    principalElement.appendChild(item_div)    
+    item_div.setAttribute("id", "videosection");
+
+    console.log('seccion del video')
+
+    return principalElement
+}
+
 function createVideoHeader (videoInfo) {
     const item_header = document.createElement('header')
     const item_title = document.createElement('h3')
@@ -153,12 +132,15 @@ window.addEventListener('load', function () {
     let index = 0
     console.log(videos.categories)
 
-    const videoElement = document.getElementById('principal')
-
     while(index < videoCategories.length){
-        const videoHeader = createVideoHeader(videoCategories[index])
-        videoElement.appendChild(videoHeader)
         console.log(videoCategories[index].title)
+        
+                
+        videoSection(index)
+        const videoElement = document.getElementById('videosection')
+        const videoHeader = createVideoHeader(videoCategories[index])
+        
+        videoElement.appendChild(videoHeader)
             for(let i=0; i < videoCategories[index].playlist.length; i++){
                 const videoDescription = createVideoDescription(videoCategories[index].playlist[i])
                 videoElement.appendChild(videoDescription)

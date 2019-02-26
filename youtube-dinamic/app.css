@@ -22,3 +22,9 @@
     color: #909090;
     font-size: 16px;
 }
+#videosection {
+    background: palegreen;
+    border: solid 2px crimson;
+    display: flex;
+    overflow: scroll;
+}
