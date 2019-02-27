@@ -31,3 +31,25 @@ const videos = {
     const messageDontSupportVideo = document.createTextNode('Ya comistes? esto no soporta video')
     videoElement.appendChild(messageDontSupportVideo)
   })
+
+
+
+
+
+  const array = [1, 3, 4, 5, 10, 16]
+  array.splice(1, 0, 2)
+  array.splice(6, 1)
+  console.log(array)}
+
+
+  const map = new Map()
+  const initialPlant = { id: 1, name: 'Bulbasaur' }
+  //Agrega el pokemon en el map
+  const initialCharmander = { id: 4, name: 'Charmander' }
+  
+  map.set(initialCharmander.id, initialCharmander)
+ //Cambia el a bulbasaur por chamander dentro del map
+
+  console.log(map)
+
+
