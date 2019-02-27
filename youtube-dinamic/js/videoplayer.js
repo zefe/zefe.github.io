@@ -52,4 +52,6 @@ const videos = {
 
   console.log(map)
 
+  // instancia es un obj que fue creado arraves de una funcion constructura  o una clase 
+
 
