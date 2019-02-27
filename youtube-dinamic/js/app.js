@@ -9,29 +9,48 @@ function appendListVideo (section, title) {
     section.appendChild(header)
     section.appendChild(container)
   }
-  
-  function createVideo (video) {
-    const article = document.createElement('article')
-    article.setAttribute('class', 'video-item')
-    const link = document.createElement('a')
-    link.setAttribute('href', `viewer?id=${video.id}`)
-    link.setAttribute('class', 'video-item--link link-container')
-    article.appendChild(link)
-  
-    const image = document.createElement('img')
-    image.setAttribute('class', 'video-item--image')
-    image.setAttribute('src', video.img)
-  
-    link.appendChild(image)
-  
-    const title = document.createElement('h4')
-    title.textContent = video.title
-  
-    link.appendChild(title)
-  
-    return article
+
+  //crear clase video a esa clase pasarle el id, la imgen, titulo. Tendra un metodo rendertoHTML  en lugar de createVideo y devuelve el nodo de articl o el nodo que voamos a crear
+  //nueva pagina para crear videos campos id, ur, titulo
+
+  class Video {
+    constructor (iD, titulo, imagen) {
+      this.iD = iD;
+      this.titulo = titulo;
+      this.imagen = imagen;
+    }
+
+    get article(){
+      return this.createArticle();
+    }
+
+    createArticle () {
+      const article = document.createElement('article')
+      article.setAttribute('class', 'video-item')
+      const link = document.createElement('a')
+      link.setAttribute('href', `viewer?id=${this.iD}`)
+      link.setAttribute('class', 'video-item--link link-container')
+      article.appendChild(link)
+    
+      const image = document.createElement('img')
+      image.setAttribute('class', 'video-item--image')
+      image.setAttribute('src', this.imagen)
+    
+      link.appendChild(image)
+    
+      const title = document.createElement('h4')
+      title.textContent = this.titulo
+    
+      link.appendChild(title)
+    
+      return article
+    }
+    
   }
   
+  const elemento = new Video(1, 'Mira mama sin manoaaas!', 'https://images.genius.com/edbc5beb351bda262691f146453080a9.1000x1000x1.png')
+  console.log(elemento.article)
+
   function appendVideos (section, videos, title) {
     appendListVideo(section, title)
     const carousel = section.querySelector('.carousel')
