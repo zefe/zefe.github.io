@@ -1,0 +1,39 @@
+body {
+    background: #fafafa;
+}
+
+.main-container {
+    width: 100%;
+    height: 90%;
+}
+
+.navigation ul {
+    display: flex;    
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.navigation ul {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #125688;
+    
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
