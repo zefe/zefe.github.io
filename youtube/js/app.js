@@ -45,14 +45,6 @@ const videos = {
       title: "No money - The aviary",
       autor: "Galantis ",
       views: " 72K vistas Hace 2 meses"
-    },
-    {
-      id: 8,
-      img:
-        "https://i.ytimg.com/vi/oJLhobZ97q8/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLAA-Q90jGrx-JXBYdEVVJqDFCNnnw",
-      title: "Calma Remix",
-      autor: "Pedro Capo - Farruko",
-      views: " 100K vistas Hace 1 mes"
     }
   ],
   principal: [
