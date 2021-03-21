@@ -10,12 +10,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #272341;
 }
 
 h1 {
     font-size: 3.5rem;
     color: #272341;
-    animation: moveLeft 1s ease-in;
 }
 
 h2 {
@@ -47,17 +47,17 @@ a {
     text-decoration: none;
     margin-top: 1.5rem;
     border: 2px solid #00cdac;
-    width: 180px;
+    width: 140px;
     border-radius: 10px;
     text-align: center;
     padding: 10px 0;
     transition: all .6s cubic-bezier(.19,1,.22,1);
-    animation: moveUp 1s ease-in;
 
 }
 
 .hero span {
     background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -102,21 +102,185 @@ a:hover {
     background-repeat: no-repeat;
     background-image: url(https://avatars.githubusercontent.com/u/12107579?s=400&u=b177780fbb45de2ca14d1fefc7cffdc3a09c8d9e&v=4);
     
-    animation: moveUp 1s ease-in;
+}
+
+.profile {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile p {
+    color: #FFFFFF;
+}
+
+/* Projects */
+
+.container-projects {
+    padding-top: 10%;
+}
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h2.section-title {
+    color: #272341;
 }
 
 .description {
     width: 50%;
     display: flex;
     flex-direction: column;
-    animation: moveLeft 1s ease-in;
+    justify-content: center;
+    padding: 2rem 2rem;
 }
 
-.description p {
-    color: #FFFFFF;
+.description h3 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    color: #272341;
+}
+
+.description h4 {
+    color: #272341;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.badges {   
+    display: flex;
+    padding: .9rem 0rem;
+}
+.badges span  {
+    border-radius: 50px;
+    padding: 0 1rem;
+    font-size: 11px;
+    font-weight: 600;
+}
+.react {
+    border-top: solid 1px #61DBFB;
+    color: #61DBFB;
+}
+.redux {
+    border-bottom: solid 1px #7248B6;
+    color: #7248B6;
+}
+.sass {
+    border-top: solid 1px #CE6B9E;
+    color: #CE6B9E;
+    }
+.mongo {
+    border-bottom: solid 1px #149C50;
+    color: #149C50;
+}
+.jwt {
+    border-top: solid 1px #A259FF;
+    color: #23302b;
+}
+.node {
+    border-bottom: solid 1px #87BF00;
+    color: #87BF00;
+}
+
+/*Design */
+.figma {
+    border-top: solid 1px #A259FF;
+    color: #23302b;
+}
+
+.invision {
+    border-bottom: solid 1px #F73163;
+    color: #F73163;
+}
+/* End Design */
+
+a.btn-primary {
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+}
+a.btn-primary-outline {
+    border: 1px solid #00cdac;
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.project-img   {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.project-img a, .project-img img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.project-img a:hover{  
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact */
+
+.container-contact {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+}
+
+.container-contact p{
+    padding: 1rem 0rem  ;
+}
+
+/*Footer */
+.container-footer {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333333;
+}
+.container-footer h3 {
+    text-align: center;
+}
+.container-footer a {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    border: initial;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem;
+    width: 95%;
+    max-width: 1200px;
 }
 
 
+.social-media a{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+}
+
+
+/*
 @keyframes moveLeft {
     0%{
         opacity: 0;
@@ -140,6 +304,7 @@ a:hover {
 }
 
 
+*/
 
 @keyframes moveUp {
     0%{

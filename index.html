@@ -1,44 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>zefe</title>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script>
-	var scroll = new SmoothScroll('a[href*="#"]', {
-			speed: 2000
-		});
-	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>zefe</title>
+	<script src="js/scrollreveal.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 <body>
 	<div id="hero" >
 		<div class="container">
 			<div class="hero">
-				<h1>Hi, my name is <span>Zeferino Torres</span><br/>I'm a Front-End Developer.</h1>
-				<a href="#about">Know more</a>
-
+				<h1 class="scroll-title">Hi, my name is <span>Zeferino Torres</span><br/>I'm a Software Enginner.</h1>
+				<a class="scroll-btn" href="#about">Know more</a>
 			</div>
 		</div>
 	</div>
 	<section id="about">
 		<div class="container">
-			<h2>About me</h2>
+			<h2 class="animation-up">About me</h2>
 			<div class="row">
 				<div class="avatar">
 					<div class="img1"></div>
 				</div>
-				<div class="description">
-					<p>Software Engineer with +5 years of experience web application development. <br/><br/>My current language is JavaScript though I'm skilled with  HTML5 and CSS3 as well. I have worked on the frontend and backend using technologies like ReactJs, Redux, Html, Css, Figma, NodeJs, Express, Postgresql, Aws, MongoDB, Git.</p>
-					<a href="#about">Vie my resumen</a>
+				<div class="profile">
+					<p>I am a Software Engineer with +5 years of experience web application development. <br/><br/>My current language is JavaScript though I'm skilled with  HTML5 and CSS3 as well. I have worked on the frontend and backend using technologies like ReactJs, Redux, Html, Css, Figma, NodeJs, Express, Postgresql, Aws, MongoDB, Git.</p>
+					<a href="https://docs.google.com/document/d/1FZVN91baOrNd5eu2WqrOn5-_A6Ux8aPu3deLrySxh5s/edit?usp=sharing" target="_blank">View Resume</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script>
-		ScrollReveal().reveal('.headline');
-	</script>
+
+	<section id="projects">
+		<div class="container-projects">
+			<div class="project">
+				<h2 class="animation-up section-title">Projects</h2>
+				<div class="row">				
+					<div class="description">
+						<h3>Pokemon </h3>
+						<p>
+							Pokemon App es una aplicacion donde puedes ver todos los
+							pokemons existentes, puedes realizar busquedas y puedes revisar a detalle cuáles son las principales características
+							de un Pokémon. Incluye una vista de detalle de cada pokemon y Paginación.
+						</p>
+						<h4>Front-end</h4>
+						<div class="badges">
+							<span class="react">ReactJs</span>
+							<span class="redux">Redux</span>
+							<span class="sass">Sass</span>
+						</div>
+						<div class="button-group">
+							<a class="btn-primary" href="https://pokemonap.herokuapp.com/" target="_blank">See Live</a>
+							<a class="btn-primary-outline" href="https://github.com/zefe/pokemon-frontend" target="_blank">Source code</a>
+						</div>
+					</div>
+					<div class="project-img">
+						<a href="https://pokemonap.herokuapp.com/" target="_blank">
+							<img src="images/pokemon-home.png" alt="pokemon project">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="row">				
+					<div class="description">
+						<h3>Todo App</h3>
+						<p>
+							Todo App es una aplicacion que muestra todas tus tareas y puedes crear nuevas tareas, actualizar el estado de una tarea y eliminar una tarea.
+							Incluye una vista de detalle de cada tarea
+						</p>
+						<h4>Front-end and Backend</h4>
+						<div class="badges">
+							<span class="react">ReactJs</span>
+							<span class="redux">Redux</span>
+							<span class="sass">Sass</span>
+							<span class="mongo">MongoDB</span>
+							<span class="jwt">JWT</span>
+							<span class="node">NodeJs</span>
+						</div>
+						<div class="button-group">
+							<a class="btn-primary" href="#">See Live</a>
+							<a class="btn-primary-outline" href="https://github.com/zefe/todoapp-frontend" target="_blank">Source code</a>
+						</div>
+					</div>
+					<div class="project-img">
+						<a href="#">
+							<img src="images/Todo-detail.jpg" alt="todo project">
+	
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="row">				
+					<div class="description">
+						<h3>Eda App</h3>
+						<p>
+							I developed this project during the FullStack JS course with Mongo + Express + React + NodeJs. It is a collaborative work platform for data science teams.
+						</p>
+						<h4>Front-end and Backend</h4>
+						<div class="badges">
+							<span class="react">ReactJs</span>
+							<span class="mongo">MongoDB</span>
+							<span class="sass">CSS</span>
+							<span class="node">NodeJs</span>
+							<span class="react">Firebase</span>
+						</div>
+						<div class="button-group">
+							<a class="btn-primary" href="https://eda-webapp.firebaseapp.com/" target="_blank">See Live</a>
+							<a class="btn-primary-outline" href="https://github.com/zefe/eda-webapp" target="_blank">Source code</a>
+						</div>
+					</div>
+					<div class="project-img">
+						<a href="https://eda-webapp.firebaseapp.com/" target="_blank">
+							<img src="images/eda.png" alt="pokemon project">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="designs">
+		<div class="container-projects">
+			<div class="project">
+				<h2 class="animation-up section-title">Design</h2>
+				<div class="row">
+					<div class="project-img">
+						<a href="https://www.figma.com/proto/goHq0LyhFSK2h8hfznSIyH/Untitled?node-id=1%3A117&scaling=min-zoom" target="_blank">
+							<img src="images/dashboard-b.png" alt="pokemon project">
+	
+						</a>
+					</div>
+					<div class="description">
+						<h3>Dashboard</h3>
+						<p>	
+							Diseño de un dashboard para mostrar las predicciones generadas por el equipo IA y Data Science,
+							en graficas y tablas. Diseñado en figma, utilizando la metodologia de Atomic Design.
+						</p>
+						<h4>Design tools</h4>
+						<div class="badges">
+							<span class="figma">Figma</span>
+						</div>
+						<div class="button-group">
+							<a class="btn-primary" href="https://www.figma.com/proto/goHq0LyhFSK2h8hfznSIyH/Untitled?node-id=1%3A117&scaling=min-zoom" target="_blank">See Live</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+			<div class="project">
+				<div class="row">				
+					<div class="description">
+						<h3>EDA</h3>
+						<p>
+							Diseño de un prototipo que es una aplicacion colaborativa para equipos de trabajo, donde pueden crear proyectos,
+							crear equipos de colaboracion y compartir informacion de un proyecto en especifico.
+						</p>
+						<h4>Design tools</h4>
+						<div class="badges">
+							<span class="figma">Figma</span>
+							<span class="invision">Invision</span>
+						</div>
+						<div class="button-group">
+							<a class="btn-primary" href="https://invis.io/HCSF3MB8DKR" target="_blank">See Live</a>
+						</div>
+					</div>
+					<div class="project-img">
+						<a href="https://invis.io/HCSF3MB8DKR" target="_blank">
+							<img src="images/eda.png" alt="pokemon project">
+	
+						</a>
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container-contact">
+			<h2>
+				CONTACT
+			</h2>
+			<p>Let me know with what I can help you with! </p>
+			<h3>zefetorres@icloud.com</h3>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="container-footer">
+			<a class="btn-primary" href="#hero">
+				<img src="/icons/arrow.png" alt="icon-" srcset="">
+			</a>
+			<div class="social-media">
+				<a href="" target="_blank">
+					<img src="/icons/twitter.png" alt="icon-" srcset="">
+				</a>
+				<a href="" target="_blank">
+					<img src="/icons/linkedin.png" alt="icon-" srcset="">
+				</a>
+				<a href="" target="_blank">
+					<img src="/icons/github.png" alt="icon-" srcset="">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script>
 </body>
 </html>
