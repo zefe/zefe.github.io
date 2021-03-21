@@ -1,39 +1,153 @@
-body {
-    background: #fafafa;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
-.main-container {
-    width: 100%;
-    height: 90%;
-}
-
-.navigation ul {
-    display: flex;    
-    list-style-type: none;
+*{
     margin: 0;
-    padding: 0; 
-}
-
-.navigation ul {
-    margin: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navigation ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #125688;
-    
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
-footer {
+h1 {
+    font-size: 3.5rem;
+    color: #272341;
+    animation: moveLeft 1s ease-in;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.container {
     width: 100%;
-    height: 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.hero {
+    padding: 1rem 2.5rem;
+    width: 95%;
+    max-width: 1200px;
+}
+
+a {
+    display: inline-block;
+    color: #00cdac;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    border: 2px solid #00cdac;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+    animation: moveUp 1s ease-in;
+
+}
+
+.hero span {
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+a:hover {
+    width: 190px;
+    cursor: pointer;
+  }
+
+/* About */
+#about {
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.row a {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.avatar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://avatars.githubusercontent.com/u/12107579?s=400&u=b177780fbb45de2ca14d1fefc7cffdc3a09c8d9e&v=4);
+    
+    animation: moveUp 1s ease-in;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    animation: moveLeft 1s ease-in;
+}
+
+.description p {
+    color: #FFFFFF;
+}
+
+
+@keyframes moveLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveLeftButton {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }

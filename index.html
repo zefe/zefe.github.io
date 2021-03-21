@@ -6,23 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <title>zefe</title>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 2000
+		});
+	</script>
 </head>
 <body>
-	<main class="main-container">
-		<section>
-		<nav class="navigation">
-			<ul>
-				<li><a href="academy-gram/">Academy - Instagram</a></li>
-				<li><a href="airbnb/">Academy - Airbnb</a></li>
-				<li><a href="calculadora-simple/">Calculadora</a></li>
-				<li><a href="youtube/">Academy - Video</a></li>
-			</ul>
-		</nav>     
-		</section>
-	</main>
-  
-<footer>     
-</footer>
+	<div id="hero" >
+		<div class="container">
+			<div class="hero">
+				<h1>Hi, my name is <span>Zeferino Torres</span><br/>I'm a Front-End Developer.</h1>
+				<a href="#about">Know more</a>
 
+			</div>
+		</div>
+	</div>
+	<section id="about">
+		<div class="container">
+			<h2>About me</h2>
+			<div class="row">
+				<div class="avatar">
+					<div class="img1"></div>
+				</div>
+				<div class="description">
+					<p>Software Engineer with +5 years of experience web application development. <br/><br/>My current language is JavaScript though I'm skilled with  HTML5 and CSS3 as well. I have worked on the frontend and backend using technologies like ReactJs, Redux, Html, Css, Figma, NodeJs, Express, Postgresql, Aws, MongoDB, Git.</p>
+					<a href="#about">Vie my resumen</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		ScrollReveal().reveal('.headline');
+	</script>
 </body>
 </html>
