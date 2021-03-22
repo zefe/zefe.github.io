@@ -74,6 +74,16 @@ a:hover {
     background-image: linear-gradient(135deg,#02aab0,#00cdac);
     transition: all .6s cubic-bezier(.19,1,.22,1);
 }
+
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -222,6 +232,7 @@ a.btn-primary-outline {
     border-radius: 10px;
     margin: 0;
     padding: 0;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);;
 }
 
 .project-img a:hover{  
@@ -257,10 +268,15 @@ a.btn-primary-outline {
     text-align: center;
 }
 .container-footer a {
-    width: 50px;
+    width: 30px;
     display: flex;
     justify-content: center;
-    border: initial;
+    border: initial
+}
+
+.container-footer img:hover {
+    background-color: #00cdac;
+    border-radius: 50%;
 }
 
 .social-media {
@@ -273,9 +289,6 @@ a.btn-primary-outline {
 
 
 .social-media a{
-    width: 40px;
-    display: flex;
-    justify-content: center;
     margin: 0 1.5rem;
 }
 
@@ -304,7 +317,7 @@ a.btn-primary-outline {
 }
 
 
-*/
+
 
 @keyframes moveUp {
     0%{
@@ -314,5 +327,56 @@ a.btn-primary-outline {
     100%{
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+*/
+
+/* Responsive */
+@media only screen and (max-width: 860px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .hero {
+        width: 90%;
+        padding: 1rem .5rem;
+    }
+    .row {
+        width: 100%;
+    }
+    .avatar {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    .profile {
+        width: 90%;
+    }
+    .img1 {
+        width: 200px;
+        height: 200px;
+    }
+    .container {
+        width: 100%;
+    }
+    .about-container h2 {
+        padding-top: 2rem;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description {
+        width: 90%;
+        padding: 2rem 0rem;
+    }
+    .project-img {
+        width: 90%;
+    }
+    .badges {
+        flex-wrap: wrap;
     }
 }
