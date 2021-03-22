@@ -249,11 +249,12 @@ a.btn-primary-outline {
 .container-footer h3 {
     text-align: center;
 }
-.container-footer a {
+.container-footer a {   
     width: 30px;
-    display: flex;
-    justify-content: center;
-    border: initial
+    border: initial;
+}
+.container-footer img {
+    border-radius: 50%;
 }
 
 .container-footer img:hover {
@@ -348,7 +349,6 @@ a.btn-primary-outline {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: royalblue;
     }
     .description {
         width: 90%;

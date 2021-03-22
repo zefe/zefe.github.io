@@ -34,5 +34,11 @@ window.sr = ScrollReveal();
         distance: '-100px',
     });
 
+    sr.reveal('.animation-top', {
+        duration: 2000, //2s
+        origin: 'top',
+        distance: '-100px',
+    });
+
 
 
