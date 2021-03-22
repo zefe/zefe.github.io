@@ -82,14 +82,17 @@ a:hover {
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    padding-top: 5%;
+    padding-bottom: 10%;
+    min-height: 100vh;
 }
 
 .row {
     display: flex;
     justify-content: center;
-    padding: 4rem 0rem;
     width: 95%;
     max-width: 1200px;
+    margin-top: 5%;
 }
 
 .row a {
@@ -127,8 +130,9 @@ a:hover {
 
 /* Projects */
 
-.container-projects {
-    padding-top: 10%;
+.container-projects{
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
 .project {
     width: 100%;
@@ -169,39 +173,18 @@ h2.section-title {
 }
 .badges span  {
     border-radius: 50px;
-    padding: 0 1rem;
+    margin-right: 1rem;
     font-size: 11px;
     font-weight: 600;
-}
-.react {
-    border-top: solid 1px #61DBFB;
-    color: #61DBFB;
-}
-.redux {
-    border-bottom: solid 1px #7248B6;
-    color: #7248B6;
-}
-.sass {
-    border-top: solid 1px #CE6B9E;
-    color: #CE6B9E;
-    }
-.mongo {
-    border-bottom: solid 1px #149C50;
-    color: #149C50;
-}
-.jwt {
-    border-top: solid 1px #A259FF;
     color: #23302b;
-}
-.node {
-    border-bottom: solid 1px #87BF00;
-    color: #87BF00;
 }
 
+
 /*Design */
-.figma {
-    border-top: solid 1px #A259FF;
-    color: #23302b;
+span.figma {
+    background-color: #F73163;
+    color: #FFFFFF;
+    padding: 0 1rem;
 }
 
 .invision {
@@ -227,12 +210,11 @@ a.btn-primary-outline {
     border-radius: 10px;
 }
 
-.project-img a, .project-img img{
+.project-img a, .project-img img {
     width: 100%;
     border-radius: 10px;
     margin: 0;
     padding: 0;
-    border-left: 2px solid rgba(0, 0, 0, 0.2);;
 }
 
 .project-img a:hover{  
@@ -243,7 +225,7 @@ a.btn-primary-outline {
 
 .container-contact {
     width: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,13 +234,13 @@ a.btn-primary-outline {
 }
 
 .container-contact p{
-    padding: 1rem 0rem  ;
+    padding: 2rem 1rem  ;
+    
 }
 
 /*Footer */
 .container-footer {
     width: 100%;
-    min-height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,7 +264,7 @@ a.btn-primary-outline {
 .social-media {
     display: flex;
     justify-content: center;
-    padding: 4rem 0rem;
+    padding: 1rem 0rem;
     width: 95%;
     max-width: 1200px;
 }
@@ -353,6 +335,7 @@ a.btn-primary-outline {
     }
     .profile {
         width: 90%;
+        text-align: justify;
     }
     .img1 {
         width: 200px;
@@ -361,17 +344,16 @@ a.btn-primary-outline {
     .container {
         width: 100%;
     }
-    .about-container h2 {
-        padding-top: 2rem;
-    }
     .row {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: royalblue;
     }
     .description {
         width: 90%;
         padding: 2rem 0rem;
+        text-align: justify;
     }
     .project-img {
         width: 90%;
