@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
+:root {
+    --text-black: #272341;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #272341;
+    color: var(--text-black);
 }
 
 h1 {
     font-size: 3.5rem;
-    color: #272341;
+    color: var(--text-black);
 }
 
 h2 {
@@ -144,7 +146,7 @@ a:hover {
 
 
 h2.section-title {
-    color: #272341;
+    color: var(--text-black);
 }
 
 .description {
@@ -158,11 +160,11 @@ h2.section-title {
 .description h3 {
     font-size: 1.5rem;
     margin: 1.2rem 0;
-    color: #272341;
+    color: var(--text-black);
 }
 
 .description h4 {
-    color: #272341;
+    color: var(--text-black);
     margin-top: 1rem;
     font-size: 16px;
 }
@@ -178,20 +180,6 @@ h2.section-title {
     font-weight: 600;
     color: #23302b;
 }
-
-
-/*Design */
-span.figma {
-    background-color: #F73163;
-    color: #FFFFFF;
-    padding: 0 1rem;
-}
-
-.invision {
-    border-bottom: solid 1px #F73163;
-    color: #F73163;
-}
-/* End Design */
 
 a.btn-primary {
     background-image: linear-gradient(135deg,#02aab0,#00cdac);
@@ -360,5 +348,15 @@ a.btn-primary-outline {
     }
     .badges {
         flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container-projects {
+        padding-top: 10%;
+    }
+    .description {
+        padding: 1rem;
     }
 }
